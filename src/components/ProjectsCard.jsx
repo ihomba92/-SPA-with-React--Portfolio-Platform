@@ -2,7 +2,7 @@ import React from "react";
 
 
 export default function ProjectsList({ projects }) {
-
+ 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-12 w-full mt-10 px-4 items-stretch">
       {projects.map((project) => (
@@ -18,13 +18,14 @@ export default function ProjectsList({ projects }) {
           <h2 className="mt-4 text-xl font-serif italic tracking-wide text-gray-900 border-b border-transparent group-hover:border-gray-400 transition-all w-fit truncate max-w-full">
             {project.title}
           </h2>
-          <p className="line-clamp-3 mt-2 text-[10px] uppercase tracking-[0.2em] text-gray-500 font-light leading-relaxed flex-grow">
-            {project.description}
+         <div className="group relative border p-4 transition-all hover:bg-gray-50">
+          <p className="line-clamp-3 group-hover:line-clamp-none mt-2 text-[10px] uppercase tracking-[0.2em] text-gray-500 font-light leading-relaxed">
+           {project.description}
           </p>
+         </div>
           </div>
         </div>
       ))}
     </div>
   );
 }
-

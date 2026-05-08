@@ -3,7 +3,7 @@
         export const featuredProjects = [
   {
     id: 'permanent-3',
-    title: 'The Exponential of Humanity',
+    title: 'Exponential Humanity',
     description: 'This piece captures a bustling garden party in late spring, rendered with a light, airy touch. The artist utilizes short, broken brushstrokes to mimic the flickering quality of light as it filters through the canopy of ancient oak trees. Rather than sharp outlines, the forms of the guests are defined by the juxtaposition of warm ochre and cool lavender shadows.',
     image: 'https://tse1.mm.bing.net/th/id/OIP.Ap0HVsGg7MBconJ2XeRXPwHaKZ?rs=1&pid=ImgDetMain&o=7&rm=3'
   },
