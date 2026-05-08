@@ -1,16 +1,13 @@
-Here is a professional and structured **README.md** file for your Leo Art Gallery application. This is designed to highlight your skills in React, state management, and UI design, which is perfect for your software engineering coursework.
 
----
-
-# 🦁 Leo Art Gallery
+#  Leo Art Gallery
 
 A sophisticated, persistent digital art gallery built with **React**, **Tailwind CSS**, and **LocalStorage**. This application features a curated collection of permanent artworks alongside a user-driven contribution system.
 
-## 🖼️ Project Overview
+##  Project Overview
 
 The Leo Art Gallery is designed to provide a seamless visual experience. It blends a "Featured Collection" (hardcoded projects) with a "Community Gallery" where users can add their own art pieces. The application ensures that user contributions are preserved even after a browser refresh using custom React hooks and LocalStorage synchronization.
 
-## 🚀 Key Features
+##  Key Features
 
 * **Persistent Storage:** Uses a custom `useState` initializer to merge static data with `localStorage` data, ensuring no loss of user-added projects.
 * **Curated & Community Sections:** A blend of 5 permanent featured artworks and unlimited user-added projects.
@@ -25,7 +22,7 @@ The Leo Art Gallery is designed to provide a seamless visual experience. It blen
 * **Data Persistence:** Browser LocalStorage API
 * **Icons:** Lucide-React / Emoji integration
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 src/
@@ -40,11 +37,11 @@ src/
 
 ```
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/your-username/leo-art-gallery.git
+git clone https://github.com/ihomba92/-SPA-with-React--Portfolio-Platform
 
 ```
 
@@ -62,14 +59,17 @@ npm install
    npm start
 
 ```
+4. **Web Host URL:**
+   ```bash
+   https://69fe5b0e82572c28c92cf526--deluxe-kleicha-cce13c.netlify.app/
 
-## 💡 Technical Implementation Details
+##  Technical Implementation Details
 
 ### Data Persistence Logic
 
 To avoid the common "flicker" of loading data after a component mounts, this project uses **Lazy State Initialization**:
 
-```javascript
+```JavaScript
 const [projects, setProjects] = useState(() => {
   const saved = localStorage.getItem("gallery_projects");
   const userProjects = saved ? JSON.parse(saved) : [];
