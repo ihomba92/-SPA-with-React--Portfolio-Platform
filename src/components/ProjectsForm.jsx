@@ -31,15 +31,12 @@ export default function ProjectForm({ onSave }) {
     // Clear form
     setPortfolio({title:'', description:'', image:''});
   }
-
-
-
-    
+ 
   return (
     <div className="bg-white shadow-xl rounded-sm p-8 flex-1 border-t-4 border-amber-800">
       <form onSubmit={handleSubmit}>
         <h2 className="text-2xl font-serif italic mb-6 text-amber-900 text-center leading-tight">
-          Join our community Add your project to the gallery
+          Add your project to the gallery
         </h2>
 
         <div className="space-y-5 flex-grow:1 flex flex-col">
