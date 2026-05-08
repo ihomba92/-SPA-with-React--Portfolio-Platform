@@ -15,7 +15,7 @@ The Leo Art Gallery is designed to provide a seamless visual experience. It blen
 * **Responsive Design:** Fully mobile-responsive layout using Tailwind CSS, featuring a sophisticated "Serif" aesthetic.
 * **Dynamic UI:** Includes a dedicated project submission form and an "About" section for gallery context.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Frontend:** React.js (Hooks: `useState`, `useEffect`)
 * **Styling:** Tailwind CSS (Modern Serif/Gallery aesthetic)
