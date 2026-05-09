@@ -13,12 +13,11 @@ export default function About() {
         </p>
         <p className="mt-4 text-gray-600 text-base leading-loose font-light">
           Whether you're a painter, sculptor, or digital creator, this is the place to share your vision with the world. Join us in celebrating the beauty of creation.
-        </p>
-        
-        <div className="mt-8 flex items-center gap-4 w-full">
-          <div className=" w-12 bg-amber-800"></div>
-          <span className="text-[10px] uppercase tracking-[0.3em] text-amber-900 font-bold text-italic">@Ihomba.92</span>
-          <span className="text-[10px] uppercase tracking-[0.3em] text-amber-900 font-bold">Est. 2026</span>
+        </p> 
+       <div className="mt-8 flex justify-center items-center gap-14 w-full ">
+          <div className="bg-amber-800 text-italic text-sm font-light"></div>
+          <span className="text-[10px] uppercase tracking-[0.3em] text-amber-900 font-bold w-full">@Ihomba.92</span>
+          <span className="text-[10px] uppercase tracking-[0.3em] text-amber-900 font-bold w-full">Est. 2026</span>
         </div>
       </div>
     </div>
