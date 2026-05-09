@@ -60,8 +60,10 @@ npm install
 
 ```
 4. **Web Host URL:**
-   ```bash
-  https://69ff1352c3bdc6c939c7df50--remarkable-gumption-c98292.netlify.app/
+```bash
+  https://69ff1352c3bdc6c939c7df50--remarkable-gumption-c98292.netlify.app
+  
+```
 
 ##  Technical Implementation Details
 
