@@ -1,7 +1,7 @@
 import React from "react";
 
 
-export default function ProjectsList({ projects }) {
+export default function ProjectsCard({ projects }) {
  
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-12 w-full mt-10 px-4 items-stretch">
