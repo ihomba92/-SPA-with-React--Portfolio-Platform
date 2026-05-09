@@ -10,7 +10,8 @@ function App() {
   // Main state that stores all projects
 
   // Load projects from localStorage on initial render
- 
+  // This also has lazy state initialization which helps the program to load slowly with easy components first then 
+  // heavy components later.
 const [projects, setProjects] = useState(() => {
   const saved = localStorage.getItem("gallery_projects");
   const userProjects = saved ? JSON.parse(saved) : [];
@@ -41,7 +42,7 @@ const [projects, setProjects] = useState(() => {
   );
 
   return (
-    <div className="min-h-screen bg-gray-100 p-3 flex flex-col gap-3 m-auto max-w-7xl">
+    <div className="min-h-screen bg-gray-100 p-3 flex flex-col gap-2 m-auto max-w-7xl">
       <div className="flex flex-col items-center mb-16 mt-10">
     <span className="text-xs uppercase tracking-[0.5em] text-amber-800 font-semibold mb-2">
     @92 Collections
