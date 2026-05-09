@@ -5,7 +5,14 @@ export default function ProjectForm({ onSave }) {
   // State for form fields
   const [portfolio, setPortfolio] = useState({title:'', description:'', image:''});
   
-     
+  // function to handle image upload from a phone or computer.
+  function handleFileChange(e) {
+    const file = e.target.files[0];
+    if (file) { // creates a blob: a local URL for the file uploaded from the local device
+      const localUrl = URL.createObjectURL(file);
+      setPortfolio({...portfolio, image: localUrl});
+    }
+  }
   // Handle form submission
   function handleSubmit(e) {
     e.preventDefault();
@@ -44,7 +51,8 @@ export default function ProjectForm({ onSave }) {
           <label className="text-xs uppercase tracking-widest font-semibold text-gray-600 block mb-1">
             Title </label>
             <input
-            className="border-b border-gray-300 focus:border-amber-800 outline-none p-2 w-full transition-colors font-serif text-lg"            type="text"
+            className="border-b border-gray-300 focus:border-amber-800 outline-none p-2 w-full transition-colors font-serif text-lg"           
+            type="text"
             placeholder="Enter project title"
             value={portfolio.title}
             onChange={(e) => setPortfolio({...portfolio, title: e.target.value})}
@@ -56,26 +64,41 @@ export default function ProjectForm({ onSave }) {
             Description
           </label>
           <textarea
-          className="border border-gray-200 focus:border-amber-800 outline-none p-3 w-full rounded-sm h-32 resize-none text-sm text-gray-700"            placeholder="Enter project description"
+            className="border border-gray-200 focus:border-amber-800 outline-none p-3 w-full rounded-sm h-32 resize-none text-sm text-gray-700"          
+            placeholder="Enter project description"
             value={portfolio.description}
             onChange={(e) => setPortfolio({...portfolio, description: e.target.value})}/>
         </div>
+         {/* we unify both methods of uploading images */}
         <div  className="mb-4">
           <label className="text-xs uppercase tracking-widest font-semibold text-gray-600 block mb-1">
            Image  </label>
-            <input
+               {/* Option I: uses online URL */}
+            <input 
             className="border p-2 rounded w-full"
             type="text"
             placeholder="Enter project image URL"
             value={portfolio.image}
             onChange={(e) => setPortfolio({...portfolio, image: e.target.value})}
           />
-           
+        <div className="text-center text-[10px] text-gray-400 font-bold uppercase tracking-tighter">— OR —</div>
+        {/* Option II: use this to upload from our device */}
+        <label className="flex items-center justify-center border-2 border-dashed border-gray-200 p-4 cursor-pointer hover:border-amber-800 transition-all rounded-sm">
+            <span className="text-[10px] uppercase tracking-widest text-gray-500 font-bold">
+              {portfolio.image.startsWith('blob:') ? "✓ Image Loaded" : "Upload from Device"}
+            </span>
+            <input
+              type="file"
+              accept="image/*"
+              className="hidden"
+              onChange={handleFileChange}
+            />
+          </label>   
         </div>
-
         <button
         type="submit"
-         className="mt-8 bg-gray-900 text-white text-xs uppercase tracking-[0.2em] font-bold py-4 px-5 hover:bg-amber-900 transition-all duration-300 shadow-lg"          type="submit">
+         className="mt-8 bg-gray-900 text-white text-xs uppercase tracking-[0.2em] font-bold py-4 px-5 hover:bg-amber-900 transition-all duration-300 shadow-lg"         
+         type="submit">
           Add to Gallery
         </button>
       </form>
