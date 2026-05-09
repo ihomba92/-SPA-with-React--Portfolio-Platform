@@ -41,7 +41,7 @@ const [projects, setProjects] = useState(() => {
   );
 
   return (
-    <div className="min-h-screen bg-gray-100 p-10 flex flex-col gap-3 m-auto max-w-7xl">
+    <div className="min-h-screen bg-gray-100 p-3 flex flex-col gap-3 m-auto max-w-7xl">
       <div className="flex flex-col items-center mb-16 mt-10">
     <span className="text-xs uppercase tracking-[0.5em] text-amber-800 font-semibold mb-2">
     @Ihomba.92 Collections
@@ -55,11 +55,10 @@ const [projects, setProjects] = useState(() => {
        <ProjectsCard projects={filteredProjects} />
       </div>
       <hr className="my-10" />
-      <h3 ><span className="text-xs uppercase tracking-[0.5em] text-amber-800 font-semibold ml-30 px-4">
+      <h3 className="p-4"><span className="text-xs uppercase tracking-[0.5em] text-amber-800 font-semibold flex justify-center px-4">
        Join our community 
        </span></h3>
       <div className="flex flex-col md:flex-row gap-12 items-stretch justify-center w-full max-w-6xl mx-auto px-4 mb-20">
-      
       <ProjectForm onSave={addProject} />
       <About />
       </div>  
