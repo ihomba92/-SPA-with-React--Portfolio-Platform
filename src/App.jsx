@@ -44,7 +44,7 @@ const [projects, setProjects] = useState(() => {
     <div className="min-h-screen bg-gray-100 p-3 flex flex-col gap-3 m-auto max-w-7xl">
       <div className="flex flex-col items-center mb-16 mt-10">
     <span className="text-xs uppercase tracking-[0.5em] text-amber-800 font-semibold mb-2">
-    @Ihomba.92 Collections
+    @92 Collections
     </span>
     <h1 className="text-2xl md:text-4xl lg:text-6xl font-serif tracking-tighter text-gray-900 flex items-center gap-2">
     LEO <span className=" bg-gray-900"></span> GALLERY
