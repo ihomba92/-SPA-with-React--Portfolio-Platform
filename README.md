@@ -61,7 +61,7 @@ npm install
 ```
 4. **Web Host URL:**
    ```bash
-   https://69fe5b0e82572c28c92cf526--deluxe-kleicha-cce13c.netlify.app/
+  https://69ff1352c3bdc6c939c7df50--remarkable-gumption-c98292.netlify.app/
 
 ##  Technical Implementation Details
 
