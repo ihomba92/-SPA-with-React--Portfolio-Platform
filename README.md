@@ -61,7 +61,7 @@ npm install
 ```
 4. **Web Host URL:**
 ```bash
-  https://69ff1352c3bdc6c939c7df50--remarkable-gumption-c98292.netlify.app
+  https://69ff3d93ea1c0e6e65e6763f--tiny-hummingbird-e863b6.netlify.app/
   
 ```
 
